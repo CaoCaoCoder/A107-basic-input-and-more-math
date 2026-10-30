@@ -24,3 +24,17 @@ Your final amount is $39152.94
 You earned $14152.94 interest
 ```
 '''
+
+print("simple interest calculator")
+
+P = float(input("What is your initial investment?: "))
+R = float(input("What is your annual rate of interest?: "))
+r = R/100
+T = float(input("How many years invested?: "))
+n = float(input("How many compounding periods? "))
+
+f = (round(P*(1+(r/n))**(n*T), 2))
+i = round(f - P, 2)
+
+print(f"\nyour final amount is {f}")
+print(f"you earned {i} interest\n")

@@ -21,3 +21,18 @@ Enter your income: 125000
 Your federal income tax is: 24411.7
 
 '''
+import math
+
+m = float(input("Enter your annual income: "))
+
+if m>150000 or m<100000:
+    print("\nYou don't fit the criteria\n")
+
+g = m - 49020
+l = 49020*0.15
+t = g*0.26
+
+
+
+if 150001 > m > 99999:
+    print(f"\nyour federal income tax is: {l+t}\n")
