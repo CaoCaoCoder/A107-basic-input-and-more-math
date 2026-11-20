@@ -28,11 +28,9 @@ m = float(input("Enter your annual income: "))
 if m>150000 or m<100000:
     print("\nYou don't fit the criteria\n")
 
-g = m - 49020
-l = 49020*0.15
-t = g*0.26
+t1 = .15 * 49020
+t2 = .205 * (98040 - 49020)
+t3 = .26 * (m - 98040)
+t = round((t1 + t2 +t3), 2)
 
-
-
-if 150001 > m > 99999:
-    print(f"\nyour federal income tax is: {l+t}\n")
+print(f"your federal income tax is {t}")
